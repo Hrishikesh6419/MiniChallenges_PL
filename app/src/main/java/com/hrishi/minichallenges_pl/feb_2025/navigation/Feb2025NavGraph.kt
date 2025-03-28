@@ -4,7 +4,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
-import com.hrishi.minichallenges_pl.feb_2025.battery_indicator.FestiveBatteryIndicatorScreen
+import com.hrishi.minichallenges_pl.feb_2025.battery_indicator.FestiveBatteryIndicatorScreenRoot
 import com.hrishi.minichallenges_pl.feb_2025.home.Feb2025HomeScreen
 import com.hrishi.minichallenges_pl.utils.Feb2025Challenges
 
@@ -25,7 +25,7 @@ fun NavGraphBuilder.feb2025NavGraph(
             )
         }
         composable<FestiveBatteryIndicatorScreenRoute> {
-            FestiveBatteryIndicatorScreen()
+            FestiveBatteryIndicatorScreenRoot()
         }
     }
 }

@@ -37,11 +37,19 @@ import com.hrishi.minichallenges_pl.R
 import kotlinx.coroutines.delay
 
 @Composable
-fun FestiveBatteryIndicatorScreen(
+fun FestiveBatteryIndicatorScreenRoot(
     modifier: Modifier = Modifier
 ) {
     val batteryPercentage = rememberBatteryPercentage()
 
+    FestiveBatteryIndicatorScreen(modifier, batteryPercentage.value)
+}
+
+@Composable
+private fun FestiveBatteryIndicatorScreen(
+    modifier: Modifier = Modifier,
+    batteryPercentage: Float
+) {
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -54,9 +62,9 @@ fun FestiveBatteryIndicatorScreen(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(24.dp)
         ) {
-            HeartIndicator(batteryPercentage.value)
-            BatteryIndicator(batteryPercentage.value)
-            CloverIndicator(batteryPercentage.value)
+            HeartIndicator(batteryPercentage)
+            BatteryIndicator(batteryPercentage)
+            CloverIndicator(batteryPercentage)
         }
     }
 }
@@ -224,5 +232,7 @@ private fun PreviewFestiveBatteryIndicator() {
         )
     }
 
-    FestiveBatteryIndicatorScreen()
+    FestiveBatteryIndicatorScreen(
+        batteryPercentage = animateValue.value
+    )
 }
