@@ -6,6 +6,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import com.hrishi.minichallenges_pl.feb_2025.navigation.feb2025NavGraph
 import com.hrishi.minichallenges_pl.home_screen.navigation.HomScreenBaseRoute
 import com.hrishi.minichallenges_pl.home_screen.navigation.homeNavGraph
 
@@ -20,5 +21,6 @@ fun NavigationRoot(
         modifier = modifier,
     ) {
         homeNavGraph(navController)
+        feb2025NavGraph(navController)
     }
 }
