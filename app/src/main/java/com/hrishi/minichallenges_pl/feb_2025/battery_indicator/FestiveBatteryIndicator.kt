@@ -38,9 +38,10 @@ import kotlinx.coroutines.delay
 
 @Composable
 fun FestiveBatteryIndicatorScreen(
-    batteryPercentage: Float,
     modifier: Modifier = Modifier
 ) {
+    val batteryPercentage = rememberBatteryPercentage()
+
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -48,13 +49,14 @@ fun FestiveBatteryIndicatorScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(24.dp)
         ) {
-            HeartIndicator(batteryPercentage)
-            BatteryIndicator(batteryPercentage)
-            CloverIndicator(batteryPercentage)
+            HeartIndicator(batteryPercentage.value)
+            BatteryIndicator(batteryPercentage.value)
+            CloverIndicator(batteryPercentage.value)
         }
     }
 }
@@ -222,5 +224,5 @@ private fun PreviewFestiveBatteryIndicator() {
         )
     }
 
-    FestiveBatteryIndicatorScreen(batteryPercentage = animateValue.value)
+    FestiveBatteryIndicatorScreen()
 }
