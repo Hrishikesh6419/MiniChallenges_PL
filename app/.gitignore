@@ -1,0 +1,18 @@
+/build
+/release
+/debug
+
+# Generated files
+*.aab
+*.apk
+*.aar
+output.json
+
+# Navigation editor temp files
+.navigation/
+
+# Crashlytics configuations
+com_crashlytics_export_strings.xml
+
+# Signing files
+.signing/
