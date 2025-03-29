@@ -1,4 +1,4 @@
-package com.hrishi.minichallenges_pl.feb_2025.home
+package com.hrishi.minichallenges_pl.core
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material3.Card
@@ -19,14 +18,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.hrishi.minichallenges_pl.ui.theme.MiniChallenges_PLTheme
-import com.hrishi.minichallenges_pl.utils.Feb2025Challenges
+import com.hrishi.minichallenges_pl.core.utils.Challenge
 
 @Composable
-fun Feb2025HomeScreen(
-    onChallengeSelected: (Feb2025Challenges) -> Unit,
+fun ChallengesHomeScreen(
+    challenges: List<Challenge>,
+    onChallengeSelected: (Challenge) -> Unit,
+    title: String = "Select a Challenge",
     modifier: Modifier = Modifier,
 ) {
     Column(
@@ -35,7 +34,7 @@ fun Feb2025HomeScreen(
             .padding(16.dp)
     ) {
         Text(
-            text = "Select a Challenge",
+            text = title,
             style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier.padding(bottom = 16.dp)
         )
@@ -44,7 +43,8 @@ fun Feb2025HomeScreen(
             verticalArrangement = Arrangement.spacedBy(8.dp),
             modifier = Modifier.fillMaxWidth()
         ) {
-            items(Feb2025Challenges.entries) { challenge ->
+            items(challenges.size) { index ->
+                val challenge = challenges[index]
                 ChallengeItem(
                     challenge = challenge,
                     onClick = { onChallengeSelected(challenge) }
@@ -56,7 +56,7 @@ fun Feb2025HomeScreen(
 
 @Composable
 private fun ChallengeItem(
-    challenge: Feb2025Challenges,
+    challenge: Challenge,
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -83,13 +83,5 @@ private fun ChallengeItem(
                 contentDescription = "Navigate to ${challenge.displayName}"
             )
         }
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-private fun PreviewChallengeScreen() {
-    MiniChallenges_PLTheme {
-        Feb2025HomeScreen(onChallengeSelected = {})
     }
 }

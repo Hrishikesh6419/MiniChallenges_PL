@@ -1,4 +1,4 @@
-package com.hrishi.minichallenges_pl.utils
+package com.hrishi.minichallenges_pl.core.utils
 
 enum class Months(val displayName: String) {
     FEB_2025("February 2025"),

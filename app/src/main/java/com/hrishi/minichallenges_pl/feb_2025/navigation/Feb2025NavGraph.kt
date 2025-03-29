@@ -4,10 +4,10 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
+import com.hrishi.minichallenges_pl.core.ChallengesHomeScreen
+import com.hrishi.minichallenges_pl.core.utils.Feb2025Challenges
 import com.hrishi.minichallenges_pl.feb_2025.battery_indicator.FestiveBatteryIndicatorScreenRoot
-import com.hrishi.minichallenges_pl.feb_2025.home.Feb2025HomeScreen
 import com.hrishi.minichallenges_pl.feb_2025.sms_confetti.SmsConfettiScreenRoot
-import com.hrishi.minichallenges_pl.utils.Feb2025Challenges
 
 fun NavGraphBuilder.feb2025NavGraph(
     navController: NavHostController
@@ -16,7 +16,8 @@ fun NavGraphBuilder.feb2025NavGraph(
         startDestination = Feb2025HomeScreenRoute
     ) {
         composable<Feb2025HomeScreenRoute> {
-            Feb2025HomeScreen(
+            ChallengesHomeScreen(
+                challenges = Feb2025Challenges.entries,
                 onChallengeSelected = { challenge ->
                     when (challenge) {
                         Feb2025Challenges.BATTERY_INDICATOR -> navController.navigateToFestiveBatteryIndicatorScreenRoute()
