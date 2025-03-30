@@ -1,6 +1,6 @@
 # Mini Challenges - PL
 
-Welcome! Below you’ll find all the mini-challenges from PL Coding's Mobile Dev Campus Challenges—have fun exploring them!
+Welcome! Below, you’ll find all the mini-challenges from PL Coding's Mobile Dev Campus that I’m currently working on or have completed—have fun exploring them!
 
 ---
 
