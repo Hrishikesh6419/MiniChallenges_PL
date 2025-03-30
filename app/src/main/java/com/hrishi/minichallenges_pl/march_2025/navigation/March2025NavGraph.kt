@@ -8,6 +8,7 @@ import com.hrishi.minichallenges_pl.core.ChallengesHomeScreen
 import com.hrishi.minichallenges_pl.core.utils.Mars2025Challenges
 import com.hrishi.minichallenges_pl.march_2025.dawn_dusk_transition.DawnDuskTransitionScreenRoot
 import com.hrishi.minichallenges_pl.march_2025.mars_weather_card.MarsWeatherCardScreenRoot
+import com.hrishi.minichallenges_pl.march_2025.orbiting_rocket.OrbitAnimation
 
 fun NavGraphBuilder.march2025NavGraph(
     navController: NavHostController
@@ -22,6 +23,7 @@ fun NavGraphBuilder.march2025NavGraph(
                     when (challenge) {
                         Mars2025Challenges.DAWN_DUSK_ANIMATION -> navController.navigateToDawnDuskTransitionScreenRoute()
                         Mars2025Challenges.MARS_WEATHER_CARD -> navController.navigateToMarsWeatherCardScreenRoute()
+                        Mars2025Challenges.ORBITING_ROCKET -> navController.navigateToOrbitingRocketScreenRoute()
                     }
                 }
             )
@@ -31,6 +33,9 @@ fun NavGraphBuilder.march2025NavGraph(
         }
         composable<MarsWeatherCardScreenRoute> {
             MarsWeatherCardScreenRoot()
+        }
+        composable<OrbitingRocketScreenRoute> {
+            OrbitAnimation()
         }
     }
 }

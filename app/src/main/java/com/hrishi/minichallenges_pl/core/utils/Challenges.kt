@@ -19,5 +19,8 @@ enum class Mars2025Challenges : Challenge {
     },
     MARS_WEATHER_CARD {
         override val displayName: String = "Mars Weather Card"
+    },
+    ORBITING_ROCKET {
+        override val displayName: String = "Orbiting Rocket"
     }
 }
