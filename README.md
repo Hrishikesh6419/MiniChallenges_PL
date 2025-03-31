@@ -10,8 +10,9 @@ Welcome! Below, you’ll find all the mini-challenges from PL Coding's Mobile De
   - **Festive Battery Indicator**: A battery indicator with a festive twist that grows or shrinks based on the user's battery level.
   - **Confetti SMS Animation**: Playful confetti animations that fly around when you receive a reward message.
 - **March**
-  - **Dawn Dusk Transition** (Coming Soon): Smoothly animates the background from dawn to dusk when the phone is toggled between dark mode and light mode.
-  - **Mars Weather Card** (Coming Soon): A cool card that shows the weather on Mars. Because who wouldn't want a daily forecast from the Red Planet?
+  - **Dawn Dusk Transition**: Smoothly animates the background from dawn to dusk when the phone is toggled between dark mode and light mode.
+  - **Mars Weather Card**: A cool card that shows the weather on Mars. Because who wouldn't want a daily forecast from the Red Planet?
+  - **Rocket Orbiting Earth**: An animated visualization of a rocket orbiting the Earth.
 
 ---
 
@@ -26,10 +27,11 @@ Welcome! Below, you’ll find all the mini-challenges from PL Coding's Mobile De
     <td>
       <video width="300" src="https://github.com/user-attachments/assets/c54481f3-dab5-4c9c-89ea-b0c5fd80b876" controls></video>
     </td>
+    <td>
+      <video width="300" src="https://github.com/user-attachments/assets/0baa3b6a-cfc4-40a6-aec5-2fcb89244358" controls></video>
+    </td>
   </tr>
 </table>
-
-
 ---
 
 ## 🛠 Installation & Setup
