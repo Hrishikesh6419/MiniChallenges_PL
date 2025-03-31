@@ -28,11 +28,15 @@ Welcome! Below, you’ll find all the mini-challenges from PL Coding's Mobile De
       <video width="300" src="https://github.com/user-attachments/assets/c54481f3-dab5-4c9c-89ea-b0c5fd80b876" controls></video>
     </td>
     <td>
-      <video width="300" src="https://github.com/user-attachments/assets/0baa3b6a-cfc4-40a6-aec5-2fcb89244358" controls></video>
+      <video width="300" src="https://github.com/user-attachments/assets/cfaf9f8e-782c-44f0-b404-84352c49c36d" controls></video>
     </td>
   </tr>
 </table>
 ---
+
+
+
+
 
 ## 🛠 Installation & Setup
 
