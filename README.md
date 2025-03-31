@@ -32,6 +32,7 @@ Welcome! Below, you’ll find all the mini-challenges from PL Coding's Mobile De
     </td>
   </tr>
 </table>
+
 ---
 
 ## 🛠 Installation & Setup
