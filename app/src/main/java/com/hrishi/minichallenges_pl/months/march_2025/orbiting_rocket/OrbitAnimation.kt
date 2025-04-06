@@ -1,4 +1,4 @@
-package com.hrishi.minichallenges_pl.march_2025.orbiting_rocket
+package com.hrishi.minichallenges_pl.months.march_2025.orbiting_rocket
 
 import androidx.compose.animation.core.EaseInOutCubic
 import androidx.compose.animation.core.LinearEasing

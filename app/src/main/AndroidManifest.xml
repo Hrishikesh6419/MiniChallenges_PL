@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
         <receiver
-            android:name=".feb_2025.sms_confetti.SmsReceiver"
+            android:name=".months.feb_2025.sms_confetti.SmsReceiver"
             android:exported="true"
             android:permission="android.permission.BROADCAST_SMS">
             <intent-filter>

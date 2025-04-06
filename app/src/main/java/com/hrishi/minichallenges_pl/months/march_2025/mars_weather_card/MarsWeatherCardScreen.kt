@@ -1,4 +1,4 @@
-package com.hrishi.minichallenges_pl.march_2025.mars_weather_card
+package com.hrishi.minichallenges_pl.months.march_2025.mars_weather_card
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background

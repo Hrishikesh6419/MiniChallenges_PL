@@ -1,4 +1,4 @@
-package com.hrishi.minichallenges_pl.feb_2025.battery_indicator
+package com.hrishi.minichallenges_pl.months.feb_2025.battery_indicator
 
 import android.content.BroadcastReceiver
 import android.content.Context

@@ -1,4 +1,4 @@
-package com.hrishi.minichallenges_pl.march_2025.navigation
+package com.hrishi.minichallenges_pl.months.march_2025.navigation
 
 import androidx.navigation.NavController
 import androidx.navigation.NavOptionsBuilder

@@ -1,4 +1,4 @@
-package com.hrishi.minichallenges_pl.feb_2025.sms_confetti
+package com.hrishi.minichallenges_pl.months.feb_2025.sms_confetti
 
 import android.Manifest
 import androidx.activity.compose.rememberLauncherForActivityResult

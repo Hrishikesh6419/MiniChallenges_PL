@@ -1,4 +1,4 @@
-package com.hrishi.minichallenges_pl.march_2025.dawn_dusk_transition
+package com.hrishi.minichallenges_pl.months.march_2025.dawn_dusk_transition
 
 import android.content.res.Configuration
 import androidx.compose.animation.core.Animatable

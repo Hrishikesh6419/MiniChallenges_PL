@@ -1,4 +1,4 @@
-package com.hrishi.minichallenges_pl.feb_2025.navigation
+package com.hrishi.minichallenges_pl.months.feb_2025.navigation
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
@@ -6,8 +6,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import com.hrishi.minichallenges_pl.core.ChallengesHomeScreen
 import com.hrishi.minichallenges_pl.core.utils.Feb2025Challenges
-import com.hrishi.minichallenges_pl.feb_2025.battery_indicator.FestiveBatteryIndicatorScreenRoot
-import com.hrishi.minichallenges_pl.feb_2025.sms_confetti.SmsConfettiScreenRoot
+import com.hrishi.minichallenges_pl.months.feb_2025.battery_indicator.FestiveBatteryIndicatorScreenRoot
+import com.hrishi.minichallenges_pl.months.feb_2025.sms_confetti.SmsConfettiScreenRoot
 
 fun NavGraphBuilder.feb2025NavGraph(
     navController: NavHostController
