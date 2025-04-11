@@ -10,6 +10,9 @@ enum class Feb2025Challenges : Challenge {
     },
     CONFETTI {
         override val displayName: String = "Confetti"
+    },
+    AUDIO_WAVE {
+        override val displayName: String = "Audio Wave Form Player"
     }
 }
 

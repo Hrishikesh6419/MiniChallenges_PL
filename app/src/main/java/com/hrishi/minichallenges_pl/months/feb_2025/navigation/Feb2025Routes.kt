@@ -16,6 +16,9 @@ data object FestiveBatteryIndicatorScreenRoute
 @Serializable
 data object SmsConfettiScreenRoute
 
+@Serializable
+data object AudioWaveFormScreenRoute
+
 fun NavController.navigateToFeb2025BaseRoute(
     navOptions: NavOptionsBuilder.() -> Unit = {}
 ) = navigate(Feb2025BaseRoute, navOptions)
@@ -31,3 +34,7 @@ fun NavController.navigateToFestiveBatteryIndicatorScreenRoute(
 fun NavController.navigateToSmsConfettiScreenRouteScreenRoute(
     navOptions: NavOptionsBuilder.() -> Unit = {}
 ) = navigate(SmsConfettiScreenRoute, navOptions)
+
+fun NavController.navigateToAudioWaveFormScreenRoute(
+    navOptions: NavOptionsBuilder.() -> Unit = {}
+) = navigate(AudioWaveFormScreenRoute, navOptions)
