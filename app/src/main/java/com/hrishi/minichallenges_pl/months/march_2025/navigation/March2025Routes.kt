@@ -19,6 +19,9 @@ data object MarsWeatherCardScreenRoute
 @Serializable
 data object OrbitingRocketScreenRoute
 
+@Serializable
+data object SpaceCraftFlipCardScreenRoute
+
 fun NavController.navigateToMarch2025BaseRoute(
     navOptions: NavOptionsBuilder.() -> Unit = {}
 ) = navigate(March2025BaseRoute, navOptions)
@@ -38,3 +41,7 @@ fun NavController.navigateToMarsWeatherCardScreenRoute(
 fun NavController.navigateToOrbitingRocketScreenRoute(
     navOptions: NavOptionsBuilder.() -> Unit = {}
 ) = navigate(OrbitingRocketScreenRoute, navOptions)
+
+fun NavController.navigateToSpaceCraftFlipCardScreenRoute(
+    navOptions: NavOptionsBuilder.() -> Unit = {}
+) = navigate(SpaceCraftFlipCardScreenRoute, navOptions)

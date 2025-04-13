@@ -25,5 +25,8 @@ enum class Mars2025Challenges : Challenge {
     },
     ORBITING_ROCKET {
         override val displayName: String = "Orbiting Rocket"
+    },
+    SPACE_CRAFT_FLIP_CARDS {
+        override val displayName: String = "Spacecraft Flip Cards"
     }
 }
