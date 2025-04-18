@@ -9,7 +9,7 @@ import com.hrishi.minichallenges_pl.core.utils.Mars2025Challenges
 import com.hrishi.minichallenges_pl.months.march_2025.dawn_dusk_transition.DawnDuskTransitionScreenRoot
 import com.hrishi.minichallenges_pl.months.march_2025.mars_weather_card.MarsWeatherCardScreenRoot
 import com.hrishi.minichallenges_pl.months.march_2025.orbiting_rocket.OrbitAnimation
-import com.hrishi.minichallenges_pl.months.march_2025.space_craft_flip_cards.SpaceCraftFlipCardsScreen
+import com.hrishi.minichallenges_pl.months.march_2025.space_craft_flip_cards.SpaceCraftFlipCardsScreenRoot
 
 fun NavGraphBuilder.march2025NavGraph(
     navController: NavHostController
@@ -40,7 +40,7 @@ fun NavGraphBuilder.march2025NavGraph(
             OrbitAnimation()
         }
         composable<SpaceCraftFlipCardScreenRoute> {
-            SpaceCraftFlipCardsScreen()
+            SpaceCraftFlipCardsScreenRoot()
         }
     }
 }
