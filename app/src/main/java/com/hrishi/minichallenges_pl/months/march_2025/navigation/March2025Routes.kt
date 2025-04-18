@@ -22,6 +22,9 @@ data object OrbitingRocketScreenRoute
 @Serializable
 data object SpaceCraftFlipCardScreenRoute
 
+@Serializable
+data object GravityTiltScreenRoute
+
 fun NavController.navigateToMarch2025BaseRoute(
     navOptions: NavOptionsBuilder.() -> Unit = {}
 ) = navigate(March2025BaseRoute, navOptions)
@@ -45,3 +48,7 @@ fun NavController.navigateToOrbitingRocketScreenRoute(
 fun NavController.navigateToSpaceCraftFlipCardScreenRoute(
     navOptions: NavOptionsBuilder.() -> Unit = {}
 ) = navigate(SpaceCraftFlipCardScreenRoute, navOptions)
+
+fun NavController.navigateToGravityTiltScreenRoute(
+    navOptions: NavOptionsBuilder.() -> Unit = {}
+) = navigate(GravityTiltScreenRoute, navOptions)
