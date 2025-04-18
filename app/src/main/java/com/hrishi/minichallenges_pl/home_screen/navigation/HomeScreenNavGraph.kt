@@ -5,8 +5,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import com.hrishi.minichallenges_pl.core.utils.Months
-import com.hrishi.minichallenges_pl.months.feb_2025.navigation.navigateToFeb2025BaseRoute
 import com.hrishi.minichallenges_pl.home_screen.month_screen.MonthScreen
+import com.hrishi.minichallenges_pl.months.april_2025.navigation.navigateToApril2025BaseRoute
+import com.hrishi.minichallenges_pl.months.feb_2025.navigation.navigateToFeb2025BaseRoute
 import com.hrishi.minichallenges_pl.months.march_2025.navigation.navigateToMarch2025BaseRoute
 
 fun NavGraphBuilder.homeNavGraph(
@@ -21,6 +22,7 @@ fun NavGraphBuilder.homeNavGraph(
                     when (month) {
                         Months.FEB_2025 -> navController.navigateToFeb2025BaseRoute()
                         Months.MAR_2025 -> navController.navigateToMarch2025BaseRoute()
+                        Months.APRIL_2025 -> navController.navigateToApril2025BaseRoute()
                     }
                 }
             )
