@@ -37,5 +37,8 @@ enum class Mars2025Challenges : Challenge {
 enum class April2025Challenges : Challenge {
     SHAKY_EGG {
         override val displayName: String = "Shaky Egg"
+    },
+    EGG_HUNT_CHECKLIST {
+        override val displayName: String = "Egg Hunt Checklist"
     }
 }
