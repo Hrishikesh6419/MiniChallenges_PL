@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import com.hrishi.minichallenges_pl.core.ChallengesHomeScreen
 import com.hrishi.minichallenges_pl.core.utils.April2025Challenges
+import com.hrishi.minichallenges_pl.months.april_2025.clipboard_chickifier.ClipboardChickifierScreenRoot
 import com.hrishi.minichallenges_pl.months.april_2025.egg_hunt_checklist.EggHuntChecklistScreenRoot
 import com.hrishi.minichallenges_pl.months.april_2025.shaky_egg.ShakyEggScreenRoot
 
@@ -22,6 +23,7 @@ fun NavGraphBuilder.april2025NavGraph(
                     when (challenge) {
                         April2025Challenges.SHAKY_EGG -> navController.navigateToShakyEggScreenRoute()
                         April2025Challenges.EGG_HUNT_CHECKLIST -> navController.navigateToEggHuntChecklistScreenRoute()
+                        April2025Challenges.CLIPBOARD_CHICKIFIER -> navController.navigateToClipboardChickifierScreenRoute()
                     }
                 }
             )
@@ -31,6 +33,9 @@ fun NavGraphBuilder.april2025NavGraph(
         }
         composable<EggHuntChecklistScreenRoute> {
             EggHuntChecklistScreenRoot()
+        }
+        composable<ClipboardChickifierScreenRoute> {
+            ClipboardChickifierScreenRoot()
         }
     }
 }

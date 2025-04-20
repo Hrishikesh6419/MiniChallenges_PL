@@ -16,6 +16,9 @@ data object ShakyEggScreenRoute
 @Serializable
 data object EggHuntChecklistScreenRoute
 
+@Serializable
+data object ClipboardChickifierScreenRoute
+
 fun NavController.navigateToApril2025BaseRoute(
     navOptions: NavOptionsBuilder.() -> Unit = {}
 ) = navigate(April2025BaseRoute, navOptions)
@@ -31,3 +34,7 @@ fun NavController.navigateToShakyEggScreenRoute(
 fun NavController.navigateToEggHuntChecklistScreenRoute(
     navOptions: NavOptionsBuilder.() -> Unit = {}
 ) = navigate(EggHuntChecklistScreenRoute, navOptions)
+
+fun NavController.navigateToClipboardChickifierScreenRoute(
+    navOptions: NavOptionsBuilder.() -> Unit = {}
+) = navigate(ClipboardChickifierScreenRoute, navOptions)

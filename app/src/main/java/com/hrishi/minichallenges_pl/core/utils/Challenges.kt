@@ -40,5 +40,8 @@ enum class April2025Challenges : Challenge {
     },
     EGG_HUNT_CHECKLIST {
         override val displayName: String = "Egg Hunt Checklist"
+    },
+    CLIPBOARD_CHICKIFIER {
+        override val displayName: String = "Clipboard Chickifier"
     }
 }
