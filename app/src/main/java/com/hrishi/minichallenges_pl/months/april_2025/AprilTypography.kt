@@ -15,6 +15,14 @@ object AprilTypography {
             )
         )
     )
+    val ChivoMonoMedium = FontFamily(
+        Font(
+            R.font.nunito_variablefont_wght,
+            variationSettings = FontVariation.Settings(
+                FontVariation.weight(500)
+            )
+        )
+    )
 
     val ChivoMonoMaxBold = FontFamily(
         Font(

@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">MiniChallenges_PL</string>
+
+    <!-- egg_hunt_locations START -->
+    <string name="egg_location_inside_mobile_dev_campus">Inside Mobile Dev Campus</string>
+    <string name="egg_location_behind_tv">Behind the TV stand</string>
+    <string name="egg_location_garden_shed">In the garden shed</string>
+    <string name="egg_location_picnic_table">Under the picnic table</string>
+    <string name="egg_location_birdhouse">Inside the birdhouse</string>
+    <string name="egg_location_garden_bushes">Behind the garden bushes</string>
+    <string name="egg_location_flower_pot">Inside the flower pot</string>
+    <string name="egg_location_mailbox">In the mailbox</string>
+    <string name="egg_location_kitchen_pantry">In the kitchen pantry</string>
+    <string name="egg_location_flower_pot_duplicate">Inside the flower pot</string>
+
+    <string name="easter_fact_1">The tradition of decorating eggs dates back to ancient civilizations, including Egyptians and Persians.</string>
+    <string name="easter_fact_2">The largest Easter egg ever made was over 7 meters tall and weighed over 3,600 kilograms.</string>
+    <string name="easter_fact_3">In some cultures, eggs are painted red to symbolize the blood of Christ.</string>
+    <string name="easter_fact_4">The Easter Bunny originated from German folklore, where it was believed to lay eggs for children to find.</string>
+    <string name="easter_fact_5">In 1970, the first-ever Easter egg hunt was held on the White House lawn.</string>
+    <string name="easter_fact_6">Cadbury\'s Crème Egg is one of the most popular Easter treats, with over 200 million sold each year.</string>
+    <string name="easter_fact_7">In Finland, Easter is celebrated with a tradition where children dress up as witches and go door-to-door for treats.</string>
+    <string name="easter_fact_8">The word "Easter" is believed to be derived from "Eostre," a pagan goddess of spring and fertility.</string>
+    <string name="easter_fact_9">In Ukraine, the art of decorating eggs is known as "Pysanky," which involves intricate designs using wax and dye.</string>
+    <string name="easter_fact_10">The tradition of the Easter egg hunt is thought to symbolize the search for the tomb of Jesus.</string>
+    <string name="easter_fact_11">In Greece, red eggs are cracked against each other in a game called "tsougrisma," symbolizing the resurrection.</string>
+    <string name="easter_fact_12">The practice of giving chocolate eggs started in the 19th century in Europe.</string>
+    <string name="easter_fact_13">The world\'s most expensive chocolate egg, made by a luxury chocolatier, was valued at over €144,000.</string>
+    <string name="easter_fact_14">In some cultures, Easter eggs are hidden in gardens and parks for children to find, promoting outdoor activity.</string>
+    <!-- egg_hunt_locations END -->
 </resources>

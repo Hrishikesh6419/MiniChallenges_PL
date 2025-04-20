@@ -24,6 +24,13 @@ object April2025Theme {
         )
     )
 
+    val BrownGradient = Brush.verticalGradient(
+        colors = listOf(
+            Color(0xFF894621),
+            Color(0xFF894621)
+        )
+    )
+
     private val YellowGradientColorStart = Color(0xFFFFC441)
     private val YellowGradientColorMiddle1 = Color(0xFFEDA616)
     private val YellowGradientColorMiddle2 = Color(0xFFE09723)
@@ -36,5 +43,9 @@ object April2025Theme {
             YellowGradientColorEnd
         )
     )
+
+    val Yellow = Color(0xFFFFF583)
+    val Gray = Color(0xFF8D8EA1)
+    val DarkBlue = Color(0xFF10122C)
 }
 
