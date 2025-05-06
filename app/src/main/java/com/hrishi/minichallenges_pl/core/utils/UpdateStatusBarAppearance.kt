@@ -1,8 +1,10 @@
 package com.hrishi.minichallenges_pl.core.utils
 
 import android.app.Activity
+import androidx.compose.foundation.text.input.TextFieldState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
@@ -24,3 +26,5 @@ fun UpdateStatusBarAppearance(isDarkStatusBarIcons: Boolean) {
         }
     }
 }
+
+fun TextFieldState.textAsFlow() = snapshotFlow { text }

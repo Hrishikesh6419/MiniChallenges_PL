@@ -28,4 +28,21 @@
     <string name="easter_fact_13">The world\'s most expensive chocolate egg, made by a luxury chocolatier, was valued at over €144,000.</string>
     <string name="easter_fact_14">In some cultures, Easter eggs are hidden in gardens and parks for children to find, promoting outdoor activity.</string>
     <!-- egg_hunt_locations END -->
+
+    <!-- Clipboard Chickifier START -->
+    <string name="easter_message_1">Hoppy Easter! Wishing you eggstra joy today!</string>
+    <string name="easter_message_2">You crack me up—have an eggcellent day!</string>
+    <string name="easter_message_3">Bunny kisses and Easter wishes!</string>
+    <string name="easter_message_4">Keep calm and hop on!</string>
+    <string name="easter_message_5">Shell yeah, it\'s Easter time!</string>
+    <string name="easter_message_6">You\'re one good egg!</string>
+    <string name="easter_message_7">Hop into spring with smiles and sunshine!</string>
+    <string name="easter_message_8">Sending you peeps and love this Easter</string>
+    <string name="easter_message_9">May your basket be full and your heart fuller!</string>
+    <string name="easter_message_10">Every bunny needs a little love today</string>
+    <string name="easter_message_11">Let’s get eggcited—it’s hunt time!</string>
+    <string name="easter_message_12">Crack open some fun this Easter!</string>
+    <string name="easter_message_13">Easter magic is just a hop away!</string>
+    <string name="easter_message_14">Have a sweet, sunny, and silly Easter!</string>
+
 </resources>

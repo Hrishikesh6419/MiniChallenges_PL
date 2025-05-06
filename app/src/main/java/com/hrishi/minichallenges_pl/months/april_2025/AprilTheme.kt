@@ -10,6 +10,13 @@ object April2025Theme {
         colors = listOf(BackgroundStart, BackgroundEnd)
     )
 
+    val SubtleBackgroundGradient = Brush.verticalGradient(
+        colors = listOf(
+            Color(0xFF1A1F4D),
+            Color(0xFF192040)
+        )
+    )
+
     private val TextColorStart = Color(0xFFFFD343)
     private val TextColorMiddle = Color(0xFFFFD64D)
     private val TextColorEnd = Color(0xFFFFB619)
@@ -47,5 +54,13 @@ object April2025Theme {
     val Yellow = Color(0xFFFFF583)
     val Gray = Color(0xFF8D8EA1)
     val DarkBlue = Color(0xFF10122C)
+
+    val chickifyEasterColors = listOf(
+        Brush.linearGradient(colors = listOf(Color(0xFF9EE09E), Color(0xFF73C2FB))),
+        Brush.linearGradient(colors = listOf(Color(0xFFFFDB58), Color(0xFFFFB347))),
+        Brush.linearGradient(colors = listOf(Color(0xFFB19CD9), Color(0xFF9370DB))),
+        Brush.linearGradient(colors = listOf(Color(0xFF87CEEB), Color(0xFF73C2FB))),
+        Brush.linearGradient(colors = listOf(Color(0xFFFFD1DC), Color(0xFFFF99CC)))
+    )
 }
 
