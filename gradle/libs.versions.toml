@@ -2,7 +2,7 @@
 # ──────────────────────────
 # 🏗️  Build Tools
 # ──────────────────────────
-agp = "8.8.0"                                # Android Gradle Plugin (AGP) - Required for building Android apps
+agp = "8.9.3"                                # Android Gradle Plugin (AGP) - Required for building Android apps
 androidTools = "31.7.3"                      # Android SDK Build Tools
 desugar_jdk_libs = "2.1.3"                   # Enables Java 8+ APIs on older Android versions
 ksp = "2.0.21-1.0.25"                        # Kotlin Symbol Processing (annotation processing)
