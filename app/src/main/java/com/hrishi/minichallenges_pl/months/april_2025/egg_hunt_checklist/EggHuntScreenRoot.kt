@@ -24,6 +24,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -48,15 +49,10 @@ import androidx.compose.ui.window.Dialog
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.hrishi.minichallenges_pl.R
 import com.hrishi.minichallenges_pl.core.utils.UpdateStatusBarAppearance
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.AprilYellowGradient
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.BackgroundGradient
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.BrownGradient
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.DarkBlue
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.TextColorGradient
 import com.hrishi.minichallenges_pl.months.april_2025.AprilTypography.ChivoMonoExtraBold
 import com.hrishi.minichallenges_pl.months.april_2025.AprilTypography.ChivoMonoMaxBold
 import com.hrishi.minichallenges_pl.months.april_2025.AprilTypography.ChivoMonoMedium
+import com.hrishi.minichallenges_pl.months.april_2025.april2025
 import kotlinx.coroutines.delay
 import org.koin.androidx.compose.koinViewModel
 import kotlin.math.ceil
@@ -84,7 +80,7 @@ fun EggHuntChecklistScreen(
     LazyColumn(
         modifier = modifier
             .fillMaxSize()
-            .background(brush = BackgroundGradient)
+            .background(brush = MaterialTheme.colorScheme.april2025.BackgroundGradient)
             .systemBarsPadding()
             .navigationBarsPadding(),
         horizontalAlignment = Alignment.CenterHorizontally
@@ -102,7 +98,7 @@ fun EggHuntChecklistScreen(
             Text(
                 text = "Egg Hunt Checklist",
                 style = TextStyle(
-                    brush = TextColorGradient,
+                    brush = MaterialTheme.colorScheme.april2025.TextColorGradient,
                     fontFamily = ChivoMonoMaxBold,
                 ),
                 fontSize = 24.sp
@@ -124,7 +120,7 @@ fun EggHuntChecklistScreen(
             Text(
                 text = "${uiState.numberOfEggsSelected}/${uiState.totalNumberOfEggs} eggs found",
                 style = TextStyle(
-                    color = April2025Theme.Yellow,
+                    color = MaterialTheme.colorScheme.april2025.Yellow,
                     fontFamily = ChivoMonoMaxBold,
                     textAlign = TextAlign.Center
                 ),
@@ -149,7 +145,7 @@ fun EggHuntChecklistScreen(
                 modifier = Modifier
                     .padding(horizontal = 16.dp)
                     .background(
-                        brush = AprilYellowGradient,
+                        brush = MaterialTheme.colorScheme.april2025.AprilYellowGradient,
                         shape = RoundedCornerShape(percent = 50)
                     )
                     .padding(vertical = 10.dp)
@@ -181,7 +177,7 @@ private fun EggCardItem(
         modifier = modifier
             .padding(horizontal = 16.dp)
             .background(
-                brush = if (eggLocationData.isSelected) AprilYellowGradient else April2025Theme.GrayGradient,
+                brush = if (eggLocationData.isSelected) MaterialTheme.colorScheme.april2025.AprilYellowGradient else MaterialTheme.colorScheme.april2025.GrayGradient,
                 shape = RoundedCornerShape(16.dp)
             )
             .fillMaxWidth()
@@ -235,7 +231,7 @@ private fun EasterDialog(
                 Column(
                     modifier = Modifier
                         .background(
-                            color = DarkBlue,
+                            color = MaterialTheme.colorScheme.april2025.DarkBlue,
                             shape = RoundedCornerShape(16.dp)
                         )
                         .padding(20.dp),
@@ -273,7 +269,7 @@ private fun EasterDialog(
                             modifier = Modifier.padding(top = 12.dp),
                             text = stringResource(easterFactResourceId),
                             style = TextStyle(
-                                brush = TextColorGradient,
+                                brush = MaterialTheme.colorScheme.april2025.TextColorGradient,
                                 fontFamily = ChivoMonoExtraBold,
                                 textAlign = TextAlign.Center
                             ),
@@ -288,7 +284,7 @@ private fun EasterDialog(
                         colors = ButtonDefaults.buttonColors(containerColor = Color.Transparent),
                         contentPadding = PaddingValues(vertical = 16.dp, horizontal = 74.dp),
                         modifier = Modifier.background(
-                            brush = AprilYellowGradient,
+                            brush = MaterialTheme.colorScheme.april2025.AprilYellowGradient,
                             shape = RoundedCornerShape(8.dp)
                         )
                     ) {
@@ -344,7 +340,7 @@ fun EggTimerProgressBar(
             modifier = Modifier
                 .weight(1f)
                 .clip(RoundedCornerShape(50))
-                .background(brush = BrownGradient)
+                .background(brush = MaterialTheme.colorScheme.april2025.BrownGradient)
                 .height(6.dp)
         ) {
             val fullWidthPx = constraints.maxWidth.toFloat()
@@ -356,7 +352,7 @@ fun EggTimerProgressBar(
                     .width(with(LocalDensity.current) { currentWidth.toDp() })
                     .align(Alignment.CenterStart)
                     .clip(RoundedCornerShape(50))
-                    .background(brush = AprilYellowGradient)
+                    .background(brush = MaterialTheme.colorScheme.april2025.AprilYellowGradient)
             )
         }
 
@@ -364,7 +360,7 @@ fun EggTimerProgressBar(
 
         Text(
             text = "${remainingSeconds}s",
-            color = April2025Theme.Yellow,
+            color = MaterialTheme.colorScheme.april2025.Yellow,
             fontFamily = ChivoMonoExtraBold,
             fontSize = 18.sp
         )

@@ -49,10 +49,8 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.hrishi.minichallenges_pl.core.utils.ObserveAsEvents
 import com.hrishi.minichallenges_pl.core.utils.UpdateStatusBarAppearance
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.AprilYellowGradient
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.GrayGradient
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.SubtleBackgroundGradient
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.chickifyEasterColors
+import androidx.compose.material3.MaterialTheme
+import com.hrishi.minichallenges_pl.months.april_2025.april2025
 import com.hrishi.minichallenges_pl.months.april_2025.AprilTypography.ChivoMonoExtraBold
 import com.hrishi.minichallenges_pl.months.april_2025.AprilTypography.ChivoMonoMedium
 import org.koin.androidx.compose.koinViewModel
@@ -101,7 +99,7 @@ private fun ClipboardChickifierScreen(
     LazyColumn(
         modifier = modifier
             .fillMaxSize()
-            .background(brush = SubtleBackgroundGradient)
+            .background(brush = MaterialTheme.colorScheme.april2025.SubtleBackgroundGradient)
             .systemBarsPadding()
             .navigationBarsPadding()
             .clickable(
@@ -159,9 +157,9 @@ private fun ClipboardChickifierScreen(
                 contentPadding = PaddingValues(vertical = 16.dp, horizontal = 74.dp),
                 modifier = Modifier.background(
                     brush = if (uiState.isCopyEnabled) {
-                        AprilYellowGradient
+                        MaterialTheme.colorScheme.april2025.AprilYellowGradient
                     } else {
-                        GrayGradient
+                        MaterialTheme.colorScheme.april2025.GrayGradient
                     },
                     shape = RoundedCornerShape(8.dp)
                 )
@@ -189,7 +187,7 @@ private fun ClipboardChickifierScreen(
 
         items(uiState.exampleTexts.size) { index ->
             val exampleTextRes = uiState.exampleTexts[index]
-            val colorBrush = chickifyEasterColors[index % chickifyEasterColors.size]
+            val colorBrush = MaterialTheme.colorScheme.april2025.chickifyEasterColors[index % MaterialTheme.colorScheme.april2025.chickifyEasterColors.size]
 
             SuggestedTextItem(
                 text = stringResource(exampleTextRes),

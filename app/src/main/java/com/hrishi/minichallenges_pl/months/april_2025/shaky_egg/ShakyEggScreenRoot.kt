@@ -25,10 +25,8 @@ import androidx.compose.ui.zIndex
 import com.hrishi.minichallenges_pl.R
 import com.hrishi.minichallenges_pl.months.april_2025.AprilTypography.ChivoMonoExtraBold
 import com.hrishi.minichallenges_pl.months.april_2025.AprilTypography.ChivoMonoMaxBold
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.BackgroundGradient
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.TextColorGradient
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.AprilYellowGradient
-import com.hrishi.minichallenges_pl.months.april_2025.April2025Theme.GrayGradient
+import androidx.compose.material3.MaterialTheme
+import com.hrishi.minichallenges_pl.months.april_2025.april2025
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.random.Random
@@ -105,7 +103,7 @@ fun ShakyEggScreenRoot(modifier: Modifier = Modifier) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .background(brush = BackgroundGradient)
+                .background(brush = MaterialTheme.colorScheme.april2025.BackgroundGradient)
         ) {
             Spacer(modifier = Modifier.height(72.dp))
 
@@ -113,7 +111,7 @@ fun ShakyEggScreenRoot(modifier: Modifier = Modifier) {
                 modifier = Modifier.align(Alignment.CenterHorizontally),
                 text = "Shaky Egg",
                 style = TextStyle(
-                    brush = TextColorGradient,
+                    brush = MaterialTheme.colorScheme.april2025.TextColorGradient,
                     fontFamily = ChivoMonoMaxBold,
                 ),
                 fontSize = 24.sp
@@ -162,9 +160,9 @@ fun ShakyEggScreenRoot(modifier: Modifier = Modifier) {
                 modifier = Modifier
                     .background(
                         brush = if (isReady) {
-                            AprilYellowGradient
+                            MaterialTheme.colorScheme.april2025.AprilYellowGradient
                         } else {
-                            GrayGradient
+                            MaterialTheme.colorScheme.april2025.GrayGradient
                         },
                         shape = RoundedCornerShape(16.dp)
                     )

@@ -1,7 +1,11 @@
 package com.hrishi.minichallenges_pl.months.april_2025
 
+import androidx.compose.material3.ColorScheme
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+
+val ColorScheme.april2025 : April2025Theme
+    get() = April2025Theme
 
 object April2025Theme {
     private val BackgroundStart = Color(0xFF0F1241)
